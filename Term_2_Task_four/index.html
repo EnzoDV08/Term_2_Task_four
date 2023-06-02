@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Four</title>
+</head>
+<!--External Documents-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+ <!--Inernal Documents-->
+ <link rel="stylesheet" href="css/main.css">
+ <script src="/js/index.js"></script>
+
+
+<body>
+    <form id="vehicle-form">
+        <h3>Vehicle Inventory Log:</h3>
+        <div class="form-group">
+          <select class="form-control" id="vehicle" required>
+            <option value="">Vehicle Type</option>
+            <option value="Motorcycle">Motorcycle</option>
+            <option value="Car">Car</option>
+            <option value="Pickup Truck">Pickup Truck</option>
+            <option value="Truck">Truck</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <input type="text" class="form-control" id="make" placeholder="Make" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="text" class="form-control" id="model" placeholder="Model" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="text" class="form-control" id="number" placeholder="Registration Number" required>
+        </div>
+        
+        <div class="form-group">
+          <select class="form-control" id="Condition" required>
+            <option value="">Condition of Vehicle</option>
+            <option value="New">New</option>
+            <option value="Pre-Owned">Pre-Owned</option>
+            <option value="Damaged">Damaged</option>
+            <option value="Scrap Parts">Scrap Parts</option>
+          </select>
+        </div>
+        
+        <button type="submit" class="btn btn-primary" onclick="validateForm(event)">Log Vehicle</button>
+      </form>
+    
+</body>
+</html>
